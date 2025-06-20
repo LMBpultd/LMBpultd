@@ -61,7 +61,7 @@
 
 #ctcd{
   display: flex; 
-  gap: 3vw;
+  justify-content: space-between;
   width: 95%;
   margin: auto;
   margin-bottom: 50px;
