@@ -100,6 +100,13 @@ body {
   transition-delay: 0s !important;
 }
 
+.personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 1000px) {
   .bg {
     height: 65vh;
@@ -142,6 +149,161 @@ body {
     margin-left: 2.5%;
     font-size: 1.6vw;
     line-height: 1.29;
+  }
+  .personal {
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 50px;
+  }
+  .pdata {
+    perspective: 1000px; /* 3D effect */
+    cursor: pointer;
+    width: 49%;
+    min-height: 250px;
+    margin-bottom: 2vw;
+  }
+
+  .pdata-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .pdata.flipped .pdata-inner {
+    transform: rotateY(180deg);
+  }
+
+  .pdata-front,
+  .pdata-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pdata-front {
+    background-color: rgb(65, 15, 15);
+    color: white;
+  }
+
+  .pdata-back {
+    background-color: #cecece;
+    color: black;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+  }
+
+  .pmdata {
+    display: none;
+  }
+
+  table {
+    width: 48%;
+  }
+
+  .a {
+    border-right: 2px solid red;
+  }
+  .b {
+    border-left: 2px solid red;
+  }
+  th,
+  td {
+    padding: 5px;
+    text-align: left;
+  }
+
+  td {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.3;
+  }
+  th {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    transform: scaley(1.2);
+  }
+
+  v {
+    float: inline-end;
+  }
+
+  #table {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #tc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tc h1 {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  .datax {
+    flex-direction: column;
+    height: 80%;
+    width: 95%;
+  }
+  .datax h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .g {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+
+  .g h2 {
+    width: 35%;
+    margin: 0;
+    font-size: 1.25em;
+  }
+
+  .g p {
+    width: 65%;
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  vv {
+    font-size: 0.6em;
+  }
+  v {
+    float: inline-end;
+    padding: 0 5px;
+  }
+
+  .contacts {
+    width: 60%;
+    margin: auto;
+  }
+
+  .col1 img {
+    width: 40px;
+    padding-right: 25px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .col2 {
+    font-size: 1.3em;
   }
 }
 
@@ -188,5 +350,125 @@ body {
     text-align: justify;
     font-size: 3.5vw;
     line-height: 1.4;
+  }
+
+  .personal {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pdata {
+    display: none;
+  }
+  .pmdata {
+    width: 90%;
+    min-height: 50px;
+    margin-bottom: 25px;
+    margin-left: 5%;
+    text-align: justify;
+    word-break: break-all;
+    border-radius: 15px;
+    background-color: rgb(132, 202, 214);
+  }
+
+  .pmdata h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .r {
+    width: fit-content;
+    display: inline;
+    border-bottom: 2px solid black;
+  }
+  v {
+    float: inline-end;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  th {
+    width: 55%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  table {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 2x;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    margin-bottom: 15px;
+  }
+  td,
+  th {
+    padding: 3px;
+    font-size: 1.3em;
+  }
+
+  vv {
+    font-size: 0.7em;
+  }
+
+  td {
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .aco {
+    width: 90%;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+  }
+
+  .aco th {
+    font-size: 1em;
+    width: 43%;
+    padding: 5px 0;
+  }
+
+  .contacts-btn {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    width: 90%;
+    min-height: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  #contact-img {
+    width: 50px;
+  }
+
+  .contacts-btn a {
+    font-size: 1.5em;
+  }
+
+  table.contacts {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+  }
+  td {
+    padding: 8px;
+  }
+  .col1 {
+    width: 30%;
+    padding-left: 10px;
+    text-align: center;
+  }
+  .col2 {
+    width: 70%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .col1 img {
+    width: 50px;
   }
 }
