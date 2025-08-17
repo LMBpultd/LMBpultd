@@ -53,6 +53,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 999;
 }
 
 .con {
@@ -65,9 +66,10 @@ body {
 }
 
 .con img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  z-index: 998;
 }
 
 /* Show state: icons move upward one by one */
@@ -305,6 +307,24 @@ body {
   .col2 {
     font-size: 1.3em;
   }
+
+  #rnd{
+    font-size: 2.5em;
+  }
+
+  ul{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.3em;
+  }
+
+  li{
+    margin-bottom: 10px;
+  }
+
+
+
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -471,4 +491,17 @@ body {
   .col1 img {
     width: 50px;
   }
+
+  ul{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+
+  li{
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    word-break: keep-all;
+  }
+
 }
