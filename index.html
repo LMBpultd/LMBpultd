@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMBpultd</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        text-align: center;
+      }
+
+      #maintext {
+        color: yellow;
+        margin-top: 36vh;
+        font-size: 6em;
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+        animation: mainAnim 2s ease forwards;
+      }
+
+      #subtext {
+        color: yellowgreen;
+        margin-top: 25px;
+        font-size: 2.4em;
+        opacity: 0;
+        transform: translateY(100%) scale(0);
+        animation: subAnim 2s ease forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes mainAnim {
+        0% {
+          opacity: 0;
+          transform: scale(0) rotate(0deg);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) rotate(360deg);
+        }
+      }
+
+      @keyframes subAnim {
+        0% {
+          opacity: 0;
+          transform: translateY(100%) scale(0);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      /* Responsive adjustments */
+      @media screen and (max-width: 1000px) {
+        #maintext {
+          margin-top: 35vh;
+          font-size: 4.5em;
+        }
+        #subtext {
+          margin-top: 20px;
+          font-size: 1.5em;
+          line-height: 1.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="maintext">LMBpultd</h1>
+    <p id="subtext">Lince Binu Mattathil, The Founder of LMBpultd</p>
+
+    <script>
+      // Redirect after total animation (2s + 2s + 2s delay = 6s)
+      setTimeout(() => {
+        window.location.href = "LMBpultd.html";
+      }, 5000);
+    </script>
+  </body>
+</html>
