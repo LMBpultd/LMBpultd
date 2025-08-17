@@ -413,7 +413,7 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   table {
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding-bottom: 2x;
     padding-left: 10px;
@@ -493,15 +493,26 @@ body {
   }
 
   ul{
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding-bottom: 15px;
   }
 
   li{
     margin-bottom: 15px;
     font-size: 1.2em;
     word-break: keep-all;
+  }
+
+  .rndc{
+        border-left: 3px solid red;
+    border-right: 3px solid red;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+
+  .rndc h1{
+    margin-bottom: 25px;
   }
 
 }
