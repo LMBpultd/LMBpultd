@@ -3,410 +3,318 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LMBpultd</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <title>3D- Portfolio Book</title>
+    <!-- BoxIcon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg">
-      <p id="bg1">
-        If you want to succeed, think differently. Build your own strength,
-        overcome your weaknesses, and carve your own path. Never depend blindly
-        on anyone.
-      </p>
-    </div>
+    <div class="wrapper">
+      <div class="cover cover-left"></div>
+      <div class="cover cover-right"></div>
 
-    <div class="d1">
-      <h1>LMBpultd</h1>
-      <h3>Lince Binu Mattathil</h3>
+      <div class="book">
+        <!-- profile page -->
+        <div class="book-page page-left">
+          <div class="profile-page">
+            <img src="./Logo.png" alt="" />
+            <h1>Mr Skeleton</h1>
+            <h3>Web Developer</h3>
 
-      <p id="summary">
-        &nbsp; &nbsp; Lince Binu Mattathil, founder of
-        <i> Lince Binu Mattathil Pvt. Ltd (LMBpultd) </i>, is an accomplished
-        commerce graduate with a strong academic foundation in finance and
-        taxation. Born on 7 May 2002, he pursued both his Bachelor of Commerce
-        and Master of Commerce in Finance and Taxation at Yeldo Mar Baselios
-        College, Kothamangalam, under Mahatma Gandhi University, Kottayam.
-        <br /><br />
-        &ensp; &ensp; He completed his Higher Secondary education in Commerce
-        with Political Science at St. Sebastian’s Higher Secondary School,
-        Keerampara, and his Secondary School Leaving Certificate in 2017 at
-        Little Flower High School, Onnukal.
-        <br /><br />
+            <div class="social-media">
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            </div>
 
-        &ensp; With a blend of academic excellence and entrepreneurial drive,
-        Lince has established himself as a young professional dedicated to
-        building innovative pathways in business and finance.
-      </p>
-    </div>
+            <p>
+              Hi, I'm a web Developer. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Neque commodi numquam dolor a
+              deserunt incidunt esse molestias voluptatum porro ullam.
+            </p>
 
-    <!-- Floating Action Button -->
-    <button class="fab" id="fab">+</button>
-
-    <!-- Social Icons -->
-    <div class="connect" id="connect">
-      <div class="con">
-        <a href="tel:+919539677432"
-          ><img src="images/icons/phone.webp" alt="Phone"
-        /></a>
-      </div>
-      <div class="con">
-        <a
-          href="https://mail.google.com/mail/?view=cm&to=lmbpultd0705@gmail.com"
-          target="_blank"
-          ><img src="images/icons/Gmail_2020.webp" alt="Gmail"
-        /></a>
-      </div>
-      <div class="con">
-        <a href="https://wa.me/+919539677432" target="_blank"
-          ><img src="images/icons/whatsapp-logo-4456.svg" alt="WhatsApp"
-        /></a>
-      </div>
-      <div class="con">
-        <a href="https://instagram.com/LMBpultd" target="_blank"
-          ><img src="images/icons/Instagram_2022_Alt2.webp" alt="Instagram"
-        /></a>
-      </div>
-    </div>
-
-    <script>
-      const fab = document.getElementById("fab");
-      const connect = document.getElementById("connect");
-
-      fab.addEventListener("click", () => {
-        connect.classList.toggle("show");
-        fab.textContent = connect.classList.contains("show") ? "×" : "+";
-      });
-    </script>
-
-    <div class="personal">
-      <div class="pdata">
-        <div class="pdata-inner">
-          <div class="pdata-front">
-            <h1>Personal Data</h1>
-          </div>
-          <div class="pdata-back" id="tc">
-            <h1>Personal Data</h1>
-
-            <div id="table">
-              <table class="a">
-                <tr>
-                  <th>Name<v>:</v></th>
-                  <td>Lince Binu</td>
-                </tr>
-                <tr>
-                  <th>Address <v>:</v></th>
-                  <td>Mattathil (H)</td>
-                </tr>
-
-                <tr>
-                  <th></th>
-                  <td>Thalacode Po</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <td>Puthenkuriz</td>
-                </tr>
-              </table>
-
-              <table class="b">
-                <tr>
-                  <th>Date of Birth <v>:</v></th>
-                  <td>07<sup>th</sup> May 2002</td>
-                </tr>
-
-                <tr>
-                  <th>
-                    Location <vv style="font-size: 0.55em">(G Map)</vv> <v>:</v>
-                  </th>
-                  <td>LMBpultd</td>
-                </tr>
-
-                <tr>
-                  <th>Gender<v>:</v></th>
-                  <td>Male</td>
-                </tr>
-                <tr>
-                  <th>Status<v>:</v></th>
-                  <td>Unmarried</td>
-                </tr>
-              </table>
+            <div class="btn-box">
+              <a href="#" class="btn">Download CV</a>
+              <a href="#" class="btn contact-me">Contact Me!</a>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="pdata">
-        <div class="pdata-inner">
-          <div class="pdata-front">
-            <h1>Academic Overview</h1>
-          </div>
-          <div class="pdata-back">
-            <div class="datax">
-              <h1>Academic Overview</h1>
+        <!-- page 1 & 2 -->
+        <div class="book-page page-right turn" id="turn-1">
+          <!-- page 1 (work experience) -->
+          <div class="page-front">
+            <h1 class="title">Work Experience</h1>
 
-              <div class="g">
-                <h2>Graduation <vv>( 2019-2024 )</vv> <v>:</v></h2>
+            <div class="workeduc-box">
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2018 - 2020</span
+                >
+                <h3>Web Developer - Software Pro</h3>
                 <p>
-                  <b>B.Com & M.Com</b> in Finance and Taxation, Yeldo Mar
-                  Baselios College at MG University, Kottayam
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
+                  repellendus nemo quod in?
                 </p>
               </div>
 
-              <div class="g">
-                <h2>
-                  Higher Secondary <v>:</v>
-                  <vv style="margin-left: 20%">( 2017-2019 )</vv>
-                </h2>
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2021 - 2022</span
+                >
+                <h3>Web Designer - Software Pro</h3>
                 <p>
-                  <b>Commerce</b> Political Science, St. Stephan's Higher
-                  Secondary School, Keerampara
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
+                  repellendus nemo quod in?
                 </p>
               </div>
 
-              <div class="g">
-                <h2>S S L C <vv>( 2017 )</vv> <v>:</v></h2>
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2022 - 2023</span
+                >
+                <h3>Graphic Designer - Software Pro</h3>
                 <p>
-                  <b>General Studies</b> Little Flower High School, Oonnukal
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
+                  repellendus nemo quod in?
                 </p>
               </div>
             </div>
+            <span class="number-page">1</span>
+
+            <!-- next button -->
+            <span class="nextprev-btn" data-page="turn-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+
+          <!-- page 2 (education) -->
+          <div class="page-back">
+            <h1 class="title">Education</h1>
+
+            <div class="workeduc-box">
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2016 - 2018</span
+                >
+                <h3>College</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
+                  repellendus nemo quod in?
+                </p>
+              </div>
+
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2018 - 2020</span
+                >
+                <h3>Intermediate</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
+                  repellendus nemo quod in?
+                </p>
+              </div>
+
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2020 - 2024</span
+                >
+                <h3>BS Computer Science</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
+                  repellendus nemo quod in?
+                </p>
+              </div>
+            </div>
+
+            <span class="number-page">2</span>
+
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-1">
+              <i class="bx bx-chevron-left"></i>
+            </span>
           </div>
         </div>
-      </div>
 
 
-      <div class="pdata">
-        <div class="pdata-inner">
-          <div class="pdata-front">
-            <h1> Connect with Me </h1>
+        <!-- page 3 & 4 -->
+        <div class="book-page page-right turn" id="turn-2">
+          <!-- page 3 (my services) -->
+          <div class="page-front">
+            <h1 class="title">My Services</h1>
+
+            <div class="services-box">
+              <div class="services-content">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                  quae accusamus aliquam.
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+
+              <div class="services-content">
+                <i class="bx bxs-paint"></i>
+                <h3>Creative Design</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                  quae accusamus aliquam.
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+
+              <div class="services-content">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Digital Marketing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                  quae accusamus aliquam.
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+
+              <div class="services-content">
+                <i class="bx bx-search"></i>
+                <h3>SEO</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                  quae accusamus aliquam.
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <span class="number-page">3</span>
+
+            <!-- next button -->
+            <span class="nextprev-btn" data-page="turn-2">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+
           </div>
-          <div class="pdata-back">
-             <table class="contacts">
-    <tr>
-      <td class="col1"><img src="images/icons/phone.webp" alt="Call Me"></td>
-      <td class="col2"><a href="tel:+919539677432">+91 95396 77432</a></td>
-    </tr>
+          <!-- page 4 (my skills) -->
+          <div class="page-back">
+            <h1 class="title">My Skills</h1>
 
-    <tr>
-      <td class="col1"><img src="images/icons/Gmail_2020.webp" alt="Gmail"></td>
-      <td class="col2"><a
-          href="https://mail.google.com/mail/?view=cm&to=lmbpultd0705@gmail.com" target="_blank"
-          >lmbpultd0705@gmail.com</a></td>
-    </tr>
+            <div class="skills-box">
+              <div class="skills-content">
+                <h3>Front-End</h3>
+                <div class="content">
+                  <span><i class="bx bxl-html5"></i> HTML</span>
+                  <span><i class="bx bxl-css3"></i>CSS</span>
+                  <span><i class="bx bxl-javascript"></i>JS</span>
+                  <span><i class="bx bxl-angular"></i>Angular</span>
+                  <span><i class="bx bxl-react"></i>React Js</span>
+                  <span><i class="bx bxl-bootstrap"></i>BootStrap</span>
+                  <span><i class="bx bxl-jquery"></i>Jquery</span>
+                </div>
+              </div>
 
-    <tr>
-      <td class="col1">
-        <img src="images/icons/whatsapp-logo-4456.svg" alt="WhatsApp">
-      </td>
-      <td class="col2"><a href="Https://wa.me/+919539677432" target="_blank">+91 95396 77432</a></td>
-    </tr>
+              <div class="skills-content">
+                <h3>Back-End</h3>
+                <div class="content">
+                  <span><i class="bx bxl-python"></i>Python</span>
+                  <span><i class="bx bxl-java"></i>Java</span>
+                  <span><i class="bx bxl-nodejs"></i>Node JS</span>
+                  <span><i class="bx bxl-php"></i>PHP</span>
+                </div>
+              </div>
 
-    <tr>
-      <td class="col1"><img src="images/icons/Instagram_2022_Alt2.webp" alt="Instagram"></td>
-      <td class="col2"><a href="https://instagram.com/LMBpultd" target="_blank">@LMBpultd</a></td>
-    </tr>
+              <div class="skills-content">
+                <h3>UI/UX Design</h3>
+                <div class="content">
+                  <span><i class="bx bxl-figma"></i>Figma</span>
+                </div>
+              </div>
+            </div>
 
+            <span class="number-page">4</span>
 
-  </table>
+            <!-- next button -->
+            <span class="nextprev-btn back" data-page="turn-2">
+              <i class="bx bx-chevron-left"></i>
+            </span>
           </div>
         </div>
+
+            <!-- page 5 & 6 -->
+            <div class="book-page page-right turn" id="turn-3">
+                <!-- page 5 (latest project or many portfolio) -->
+                <div class="page-front">
+                    <h1 class="title">Latest Project</h1>
+
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="website 3.png" alt="">
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>Project Name</h3>
+                                <a href="#">Live Preview <i class="bx bx-link-external"></i></a>
+                            </div>
+                            <p>Tech Used:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vel ipsum quis possimus quaerat voluptatem temporibus saepe veniam?</p>
+                        </div>
+                        <div class="btn-box">
+                            <a href="#" class="btn">Source Code</a>
+                            <a href="#" class="btn">More Projects</a>
+    
+                        </div>
+                    </div>
+
+                    <span class="number-page">5</span>
+
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-3">
+                      <i class="bx bx-chevron-right"></i>
+                    </span>
+                </div>
+
+
+                <!-- page 6 (contact me!) -->
+                <div class="page-back">
+                    <h1 class="title">Contact Me!</h1>
+
+                    <div class="contact-box">
+                      <form action="">
+                        <input type="text" class="field" placeholder="Full Name" required>
+                        <input type="email" class="field" placeholder="Email Address" required>
+                        <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message" class="btn">
+                      </form>
+                    </div>
+
+                    <span class="number-page">6</span>
+
+                    <!-- next button -->
+                    <span class="nextprev-btn back" data-page="turn-3">
+                      <i class="bx bx-chevron-left"></i>
+                    </span>
+
+                    <a href="#" class="back-profile">
+                      <p>Profile</p>
+                      <i class="bx bxs-user"></i>
+                    </a>
+                </div>
+
+            </div>
       </div>
-
-<div class="pdata">
-        <div class="pdata-inner">
-          <div class="pdata-front">
-            <h1> Research Reports </h1>
-          </div>
-          <div class="pdata-back">
-
-            <div class="datax">
-            <h1 id="rnd">Researches</h1>
-
-            <ul>
-              <li>The Impact of Online Learning on the Transformation of the Education System.</li>
-              <li>Evaluating the Influence of Online Payment Systems on Financial Flows and Quality of Life</li>
-            </ul>
-
-</div></div>
-</div>
-</div>
-
-
-
-
-
-
-      <!--mob view-->
-      <div class="pmdata">
-        <h1>
-          P<div class="r">ersonal Dat</div>a
-        </h1>
-
-        <table>
-          <tr>
-            <th>Name<v>:</v></th>
-            <td>Lince Binu</td>
-          </tr>
-          <tr>
-            <th>Address <v>:</v></th>
-            <td>Mattathil (H)</td>
-          </tr>
-
-          <tr>
-            <th></th>
-            <td>Thalacode Po</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td>Puthenkuriz</td>
-          </tr>
-
-          <tr>
-            <th>Date of Birth <v>:</v></th>
-            <td>07<sup>th</sup> May 2002</td>
-          </tr>
-
-          <tr>
-            <th>Location <vv>(G Map)</vv> <v>:</v></th>
-            <td>LMBpultd</td>
-          </tr>
-
-          <tr>
-            <th>Gender<v>:</v></th>
-            <td>Male</td>
-          </tr>
-          <tr>
-            <th>Status<v>:</v></th>
-            <td>Unmarried</td>
-          </tr>
-        </table>
-      </div>
-      <div class="pmdata">
-        <h1>
-          A<div class="r">cademic Overvie</div>w
-        </h1>
-
-        <table class="aco">
-          <tr>
-            <th>Graduation <v>:</v></th>
-            <td><b>B.com & M.com</b></td>
-          </tr>
-
-          <tr>
-            <th></th>
-            <td style="font-size: 1.09em; word-break: keep-all; font-weight: bolder;"> Finance & Taxation</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td style="font-size: 1.09em; word-break: keep-all; text-align: left;">Yeldo Mar Baselios College, Kothamangalam <br> @ MG University Kottayam</td>
-          </tr>
-
-          <tr>
-            <th>Higher Secondary <v>:</v></th>
-            <td style="font-weight: bolder;">Commerce</td>
-          </tr>
-          
-          <tr>
-            <th></th>
-            <td style="font-size: 1.09em; word-break: keep-all; font-weight: bolder;"> Political Science</td>
-          </tr>
-            <th></th>
-            <td style="font-size: 1.09em;"> St.Stephan's Higher Secondary School, Keerampara</td>
-          </tr>
-
-          <tr>
-            <th>S S L C <v>:</v></th>
-            <td><b>General Studies</b></td>
-          </tr>
-           <tr>
-            <th></th>
-                 <td style="font-size: 1.09em;">Little Flower High School, Oonnukal</td>
-          </tr>
-        </table>
-      </div>
-
-
-      <div class="pmdata">
-
-        <h1>C<div class="r">onnect With M</div>e</h1>
-
-        <div class="contacts-btn">
-
- <table class="contacts">
-    <tr>
-      <td class="col1"><img src="images/icons/phone.webp" alt="Call Me"></td>
-      <td class="col2"><a href="tel:+919539677432">+91 95396 77432</a></td>
-    </tr>
-
-    <tr>
-      <td class="col1"><img src="images/icons/Gmail_2020.webp" alt="Gmail"></td>
-      <td class="col2"><a
-          href="https://mail.google.com/mail/?view=cm&to=lmbpultd0705@gmail.com" target="_blank"
-          style="font-size: 1.4em;">lmbpultd0705@gmail.com</a></td>
-    </tr>
-
-    <tr>
-      <td class="col1">
-        <img src="images/icons/whatsapp-logo-4456.svg" alt="WhatsApp">
-      </td>
-      <td class="col2"><a href="Https://wa.me/+919539677432" target="_blank">+91 95396 77432</a></td>
-    </tr>
-
-    <tr>
-      <td class="col1"><img src="images/icons/Instagram_2022_Alt2.webp" alt="Instagram"></td>
-      <td class="col2"><a href="https://instagram.com/LMBpultd" target="_blank">@LMBpultd</a></td>
-    </tr>
-
-
-  </table>
-
- </div>
-
-       </div>
-
-<div class="pmdata">
-
-  <div class="rndc">
-  <h1>R<div class="r">esearch Topic</div>s</h1>
-
-  <ul>
- <li>The Impact of Online Learning on the Transformation of the Education System.</li>
-
-<li>Evaluating the Influence of Online Payment Systems on Financial Flows and Quality of Life</li>
-           
-
-</ul>
-
-
-
-</div></div>
-
-
     </div>
 
-    <script>
-      const pdataCards = document.querySelectorAll(".pdata");
-
-      pdataCards.forEach((card) => {
-        card.addEventListener("click", () => {
-          // Only apply if screen is wide enough
-          if (window.innerWidth >= 1000) {
-            // Remove "flipped" from all other cards
-            pdataCards.forEach((c) => {
-              if (c !== card) c.classList.remove("flipped");
-            });
-            // Toggle the clicked one
-            card.classList.toggle("flipped");
-          }
-        });
-      });
-
-      // Optional: reset flipped state if window resized smaller than 1000px
-      window.addEventListener("resize", () => {
-        if (window.innerWidth < 1000) {
-          pdataCards.forEach((c) => c.classList.remove("flipped"));
-        }
-      });
-    </script>
+    <!-- script -->
+    <script src="script.js"></script>
   </body>
 </html>
