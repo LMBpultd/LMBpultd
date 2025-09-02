@@ -3,318 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3D- Portfolio Book</title>
-    <!-- BoxIcon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- style -->
+    <title>LMBpultd</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
   </head>
   <body>
-    <div class="wrapper">
-      <div class="cover cover-left"></div>
-      <div class="cover cover-right"></div>
+    <div class="profile">
+      <h1 id="profile-name">Lince Binu Mattathil</h1>
+      <!-- Small preview image (hover) -->
+      <img src="img/img.jpg" alt="Preview" class="preview" />
 
-      <div class="book">
-        <!-- profile page -->
-        <div class="book-page page-left">
-          <div class="profile-page">
-            <img src="img/img.jpg" alt="LMBpultd" />
-            <h1 title="LMBpultd">Lince Binu Mattathil</h1>
-            <h3>Founder of LMBpultd</h3>
+      <h3>LMBpultd</h3>
 
-            <div class="social-media">
-              <a href="#"><i class="bx bxl-facebook"></i></a>
-              <a href="#"><i class="bx bxl-twitter"></i></a>
-              <a href="#"><i class="bx bxl-instagram"></i></a>
-              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
-            </div>
+      <p>
+        Lince Binu Mattathil, founder of Lince Binu Mattathil Private Unlimited
+        (LMBpultd), is a commerce graduate with a strong specialization in
+        finance and taxation. Born on 7 May 2002, he pursued both his Bachelor’s
+        and Master’s degrees in Finance and Taxation at Yeldo Mar Baselios
+        College, Kothamangalam, under Mahatma Gandhi University, Kottayam.
+      </p>
 
-            <p>
-              Hi, I'm a web Developer. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Neque commodi numquam dolor a
-              deserunt incidunt esse molestias voluptatum porro ullam.
-            </p>
+      <p>
+        He completed his schooling at Little Flower High School, Onnukal (SSLC,
+        2017) and his Higher Secondary education in Commerce with Political
+        Science at St. Sebastian’s HSS (2019), Keerampara.
+      </p>
 
-            <div class="btn-box">
-              <a href="#" class="btn">Download CV</a>
-              <a href="#" class="btn contact-me">Contact Me!</a>
-            </div>
-          </div>
+      <p>
+        Combining academic excellence with entrepreneurial vision, LMBpultd has
+        emerged as a dynamic young professional committed to creating innovative
+        solutions in business and finance.
+      </p>
+    </div>
+<div class="scn">
+  <div class="ld"></div>
+  <h1>Alma Mater</h1>
+  <div class="ld"></div>
+</div>
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <img src="img/img.jpg" alt="Full Image" id="modalImage" />
+        <div>
+          <a
+            id="downloadBtn"
+            class="btn btn-download"
+            download="LMBpultd.jpg"
+            >Download</a
+          >
+          <button class="btn btn-close" id="closeBtn">Close</button>
         </div>
-
-        <!-- page 1 & 2 -->
-        <div class="book-page page-right turn" id="turn-1">
-          <!-- page 1 (work experience) -->
-          <div class="page-front">
-            <h1 class="title">Work Experience</h1>
-
-            <div class="workeduc-box">
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bxs-calendar"></i>2018 - 2020</span
-                >
-                <h3>Web Developer - Software Pro</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
-                  repellendus nemo quod in?
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bxs-calendar"></i>2021 - 2022</span
-                >
-                <h3>Web Designer - Software Pro</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
-                  repellendus nemo quod in?
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bxs-calendar"></i>2022 - 2023</span
-                >
-                <h3>Graphic Designer - Software Pro</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
-                  repellendus nemo quod in?
-                </p>
-              </div>
-            </div>
-            <span class="number-page">1</span>
-
-            <!-- next button -->
-            <span class="nextprev-btn" data-page="turn-1">
-              <i class="bx bx-chevron-right"></i>
-            </span>
-          </div>
-
-          <!-- page 2 (education) -->
-          <div class="page-back">
-            <h1 class="title">Education</h1>
-
-            <div class="workeduc-box">
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bxs-calendar"></i>2016 - 2018</span
-                >
-                <h3>College</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
-                  repellendus nemo quod in?
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bxs-calendar"></i>2018 - 2020</span
-                >
-                <h3>Intermediate</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
-                  repellendus nemo quod in?
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bxs-calendar"></i>2020 - 2024</span
-                >
-                <h3>BS Computer Science</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestiae minus eius nemo. Optio cupiditate nostrum commodi
-                  repellendus nemo quod in?
-                </p>
-              </div>
-            </div>
-
-            <span class="number-page">2</span>
-
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-1">
-              <i class="bx bx-chevron-left"></i>
-            </span>
-          </div>
-        </div>
-
-
-        <!-- page 3 & 4 -->
-        <div class="book-page page-right turn" id="turn-2">
-          <!-- page 3 (my services) -->
-          <div class="page-front">
-            <h1 class="title">My Services</h1>
-
-            <div class="services-box">
-              <div class="services-content">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                  quae accusamus aliquam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-
-              <div class="services-content">
-                <i class="bx bxs-paint"></i>
-                <h3>Creative Design</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                  quae accusamus aliquam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-
-              <div class="services-content">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                  quae accusamus aliquam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-
-              <div class="services-content">
-                <i class="bx bx-search"></i>
-                <h3>SEO</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                  quae accusamus aliquam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <span class="number-page">3</span>
-
-            <!-- next button -->
-            <span class="nextprev-btn" data-page="turn-2">
-              <i class="bx bx-chevron-right"></i>
-            </span>
-
-          </div>
-          <!-- page 4 (my skills) -->
-          <div class="page-back">
-            <h1 class="title">My Skills</h1>
-
-            <div class="skills-box">
-              <div class="skills-content">
-                <h3>Front-End</h3>
-                <div class="content">
-                  <span><i class="bx bxl-html5"></i> HTML</span>
-                  <span><i class="bx bxl-css3"></i>CSS</span>
-                  <span><i class="bx bxl-javascript"></i>JS</span>
-                  <span><i class="bx bxl-angular"></i>Angular</span>
-                  <span><i class="bx bxl-react"></i>React Js</span>
-                  <span><i class="bx bxl-bootstrap"></i>BootStrap</span>
-                  <span><i class="bx bxl-jquery"></i>Jquery</span>
-                </div>
-              </div>
-
-              <div class="skills-content">
-                <h3>Back-End</h3>
-                <div class="content">
-                  <span><i class="bx bxl-python"></i>Python</span>
-                  <span><i class="bx bxl-java"></i>Java</span>
-                  <span><i class="bx bxl-nodejs"></i>Node JS</span>
-                  <span><i class="bx bxl-php"></i>PHP</span>
-                </div>
-              </div>
-
-              <div class="skills-content">
-                <h3>UI/UX Design</h3>
-                <div class="content">
-                  <span><i class="bx bxl-figma"></i>Figma</span>
-                </div>
-              </div>
-            </div>
-
-            <span class="number-page">4</span>
-
-            <!-- next button -->
-            <span class="nextprev-btn back" data-page="turn-2">
-              <i class="bx bx-chevron-left"></i>
-            </span>
-          </div>
-        </div>
-
-            <!-- page 5 & 6 -->
-            <div class="book-page page-right turn" id="turn-3">
-                <!-- page 5 (latest project or many portfolio) -->
-                <div class="page-front">
-                    <h1 class="title">Latest Project</h1>
-
-                    <div class="portfolio-box">
-                        <div class="img-box">
-                            <img src="website 3.png" alt="">
-                        </div>
-
-                        <div class="info-box">
-                            <div class="info-title">
-                                <h3>Project Name</h3>
-                                <a href="#">Live Preview <i class="bx bx-link-external"></i></a>
-                            </div>
-                            <p>Tech Used:</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vel ipsum quis possimus quaerat voluptatem temporibus saepe veniam?</p>
-                        </div>
-                        <div class="btn-box">
-                            <a href="#" class="btn">Source Code</a>
-                            <a href="#" class="btn">More Projects</a>
-    
-                        </div>
-                    </div>
-
-                    <span class="number-page">5</span>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-3">
-                      <i class="bx bx-chevron-right"></i>
-                    </span>
-                </div>
-
-
-                <!-- page 6 (contact me!) -->
-                <div class="page-back">
-                    <h1 class="title">Contact Me!</h1>
-
-                    <div class="contact-box">
-                      <form action="">
-                        <input type="text" class="field" placeholder="Full Name" required>
-                        <input type="email" class="field" placeholder="Email Address" required>
-                        <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message"></textarea>
-                        <input type="submit" value="Send Message" class="btn">
-                      </form>
-                    </div>
-
-                    <span class="number-page">6</span>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn back" data-page="turn-3">
-                      <i class="bx bx-chevron-left"></i>
-                    </span>
-
-                    <a href="#" class="back-profile">
-                      <p>Profile</p>
-                      <i class="bx bxs-user"></i>
-                    </a>
-                </div>
-
-            </div>
       </div>
     </div>
 
-    <!-- script -->
+
+<div class="im-body">
+<div class="carousel" id="carousel">
+    <button class="nav-btn prev">&#10094;</button>
+    <img id="carousel-image" src="img/lfhs.webp" alt="Carousel Image">
+    <button class="nav-btn next">&#10095;</button>
+
+    <div class="desc">
+      <h2 id="desc-title">L F H S Oonnukal</h2>
+      <p id="desc-text">More Details</p>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</div>
+
+
+<div class="imd-body">
+
+  <div class="dimg">
+    <img src="img/lfhs.webp" alt="lfhs">
+    <h1>L F H S Oonnukal</h1>
+      <p>
+      <a href="school/lfhs.html">More Details</a></p>
+    
+  </div>
+
+
+
+  <div class="dimg">
+    <img src="img/sshss.webp" alt="Higher school">
+    <h1> S S H S S Keerampara</h1>
+      <p>
+      <a href="school/sshss.html">More Details</a></p>
+    
+  </div>
+
+
+
+  <div class="dimg">
+    <img src="img/ymbc.webp" alt="Collage">
+    <h1>Y M B C Kothamangalam</h1>
+      <p>
+      <a href="school/ymbc.html">More Details</a></p>
+    
+  </div>
+</div>
+
+<div class="con">
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/script.js"></script>
   </body>
 </html>
