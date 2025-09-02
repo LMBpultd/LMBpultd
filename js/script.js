@@ -21,9 +21,9 @@
 
       // scroll image school
 const images = [
-  {src: "../img/lfhs.webp", title: "L F H S Oonnukal", text: "More Details", link: "../school/lfhs.html"},
-  {src: "../img/sshss.webp", title: "S S H S S Keerampara", text: "More Details", link: "../school/sshss.html"},
-  {src: "../img/ymbc.webp", title: "Y M B C Kothamangalam", text: "More Details", link: "../school/ymbc.html"}
+  {src: "img/lfhs.webp", title: "L F H S Oonnukal", text: "More Details", link: "../school/lfhs.html"},
+  {src: "img/sshss.webp", title: "S S H S S Keerampara", text: "More Details", link: "../school/sshss.html"},
+  {src: "img/ymbc.webp", title: "Y M B C Kothamangalam", text: "More Details", link: "../school/ymbc.html"}
 ];
 
 let current = 0;
