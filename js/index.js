@@ -1,7 +1,7 @@
 window.onload = function() {
     const elements = [
         { selector: '.hd', delay: 0 },
-        { selector: '.nav', delay: 2000 },
+        { selector: '.nav', delay: 1000 },
         { selector: '.xaq', delay: 1000 },
         { selector: '.mp', delay: 2000 },
         { selector: '.cc', delay: 2700 }
